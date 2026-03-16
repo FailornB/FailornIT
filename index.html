@@ -24,7 +24,8 @@ body{background:var(--bg);color:var(--ink);font-family:'Exo 2',sans-serif;font-w
 .cursor,.cursor-ring{display:none}
 #bg-canvas{display:none}
 .grid-overlay{display:none}
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:0 60px;height:68px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:0 60px;height:68px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.95);-webkit-backdrop-filter: blur(16px);
+backdrop-filter: blur(16px);;border-bottom:1px solid var(--border);transition:box-shadow .3s}
 nav.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.08)}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
 .logo-f{width:32px;height:32px;background:var(--blue);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:#fff;flex-shrink:0}
@@ -96,8 +97,39 @@ section{position:relative;z-index:1}
 .section-title .accent{color:var(--blue)}
 .section-line{width:36px;height:3px;margin:14px auto 0;background:var(--blue);border-radius:2px;opacity:.35}
 #founder-intro{padding:100px 60px;background:var(--bg)}
-.founder-intro-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:var(--shadow-md)}
-.fi-left{background:linear-gradient(145deg,var(--bg2),var(--blue-pale));padding:52px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--border)}
+.founder-intro-inner {
+    display: grid;
+    grid-template-columns: 400px 1fr; /* On fixe la largeur de la colonne gauche */
+    max-width: 1100px; /* On réduit un peu la largeur max pour que ce soit plus compact */
+    margin: 0 auto;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.fi-left {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre la photo et les titres */
+    text-align: center;
+    background: linear-gradient(145deg, var(--bg2), var(--blue-pale));
+    border-right: 1px solid var(--border);
+}
+.fi-avatar {
+  width: 150px;       /* Ajuste cette taille selon tes goûts (120px à 180px est idéal) */
+  height: 150px;      /* Doit être identique à width pour un cercle parfait */
+  border-radius: 50%; /* Force la forme circulaire */
+  overflow: hidden;   /* Coupe tout ce qui dépasse du cercle */
+  margin: 0 auto 20px;/* Centre l'avatar horizontalement et ajoute de l'espace en dessous */
+  border: 4px solid #ffffff; /* Optionnel : ajoute une bordure blanche pour un effet CV */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Optionnel : ajoute une ombre légère */
+}
+/* Force l'image à remplir son conteneur */
+.fi-avatar img {
+  width: 100%;
+  height: 100%;
+}
 .fi-eyebrow{font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin-bottom:14px;display:flex;align-items:center;gap:8px}
 .fi-eyebrow::before{content:'';width:22px;height:2px;background:var(--blue);border-radius:2px}
 .fi-name{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;letter-spacing:2px;color:var(--ink);line-height:1;margin-bottom:4px}
@@ -277,7 +309,14 @@ section{position:relative;z-index:1}
 .faq-item.open .faq-answer{max-height:300px}
 .faq-answer p{font-size:.85rem;color:var(--muted);line-height:1.75;padding:0 20px 20px}
 #contact{padding:100px 60px;background:var(--bg)}
-.contact-container{max-width:1060px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.contact-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:60px;
+  align-items:start;
+  max-width:1200px;
+  margin:0 auto;
+}
 .contact-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,3.5vw,3.2rem);letter-spacing:2px;color:var(--ink);line-height:1;margin-bottom:18px}
 .contact-title .accent{color:var(--blue)}
 .contact-sub{font-size:.9rem;color:var(--muted);line-height:1.75;margin-bottom:32px}
@@ -724,6 +763,19 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
 [data-theme="dark"] .pvs-grid{border-color:var(--border)}
 [data-theme="dark"] .contact-link{background:var(--bg2)}
 [data-theme="dark"] .fi-right,.fi-badge{background:var(--bg2)}
+[data-theme="dark"] .article-content .tip-box{
+  background: rgba(22,163,74,.10);
+  border: 1px solid rgba(34,197,94,.28);
+  border-left: 3px solid #22c55e;
+}
+
+[data-theme="dark"] .article-content .tip-box strong{
+  color: #4ade80;
+}
+
+[data-theme="dark"] .article-content .tip-box p{
+  color: var(--ink3);
+}
 
 </style>
 </head>
@@ -763,13 +815,19 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
     <span class="theme-icon-sun">☀️</span>
     <span class="theme-icon-moon">🌙</span>
   </button>
-  <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Ouvrir le menu" type="button">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
 </nav>
 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-content">
-    <div class="hero-tag"><span class="dot"></span>Disponible pour nouveaux projets — France & Belgique</div>
+    <div class="hero-tag">
+      <span>Power Platform Specialist</span>
+    </div>
     <h1 class="hero-title">
       <span class="line1">VOTRE VISION.</span>
       <span class="line2">NOTRE CODE.</span>
@@ -818,7 +876,6 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
     <div class="marquee-item"><span class="marquee-dot"></span>Ingénieur EIL ULCO</div>
     <div class="marquee-item"><span class="marquee-dot"></span>BNP Paribas Fortis — Bruxelles</div>
     <div class="marquee-item"><span class="marquee-dot"></span>TOEIC 920</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Disponible France & Belgique</div>
     <!-- duplicate for infinite loop -->
     <div class="marquee-item"><span class="marquee-dot"></span>Power Apps Expert</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Power Automate</div>
@@ -831,7 +888,6 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
     <div class="marquee-item"><span class="marquee-dot"></span>Ingénieur EIL ULCO</div>
     <div class="marquee-item"><span class="marquee-dot"></span>BNP Paribas Fortis — Bruxelles</div>
     <div class="marquee-item"><span class="marquee-dot"></span>TOEIC 920</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Disponible France & Belgique</div>
   </div>
 </div>
 
@@ -839,18 +895,13 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
 <section id="founder-intro">
   <div class="founder-intro-inner reveal">
     <div class="fi-left">
+      <a href="images/tete.jpeg" target="_blank" class="fi-avatar">
+  <img src="images/tete.jpeg" alt="Florian BEYEN" style="width:100%; height:100%; object-fit:cover; object-position: top;">
+</a>
       <div class="fi-eyebrow">Le fondateur</div>
       <div class="fi-name">Florian BEYEN</div>
       <div class="fi-role">Ingénieur Informatique — Fondateur Failorn IT</div>
       <p class="fi-bio">Diplômé ingénieur de l'EIL Côte d'Opale (ULCO) et aguerri en environnement bancaire international chez BNP Paribas Fortis à Bruxelles, je transforme vos processus métiers en solutions digitales puissantes et accessibles. Autonome, rigoureux et passionné par la tech, j'ai fondé Failorn IT pour mettre cette expertise à votre service, sans intermédiaire.</p>
-      <div class="fi-badges">
-        <span class="fi-badge">🎓 Ingénieur EIL ULCO</span>
-        <span class="fi-badge">🏦 BNP Paribas Fortis</span>
-        <span class="fi-badge">🌍 Erasmus Pologne</span>
-        <span class="fi-badge">📋 TOEIC 920</span>
-        <span class="fi-badge">📍 Nord-Pas-de-Calais</span>
-        <span class="fi-badge">⚡ Disponible maintenant</span>
-      </div>
     </div>
     <div class="fi-right">
       <div class="fi-timeline">
@@ -909,87 +960,43 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
   </div>
   <div class="stack-grid">
 
-    <!-- Power Apps -->
     <div class="tech-card reveal">
       <div class="tech-icon">
-        <img src="images/power-apps.svg" alt="Power Apps" loading="lazy">
-      </div>/div>/div>/div>
+        <img src="images/PowerApps_scalable.svg" alt="Power Apps" loading="lazy">
+      </div>
       <div class="tech-name">Power Apps</div>
       <div class="tech-desc">Canvas · Model-Driven</div>
-      <div class="tech-level"><div class="tech-level-fill" style="--lw:0.95"></div></div>
+      <div class="tech-level"><div class="tech-level-fill" style="--lw:1"></div></div>
     </div>
 
-    <!-- Power Automate -->
     <div class="tech-card reveal reveal-delay-1">
       <div class="tech-icon">
-        <img src="images/power-automate.svg" alt="Power Automate" loading="lazy">
-      </div>/div>/div>/div>
+        <img src="images/PowerAutomate_scalable.svg" alt="Power Automate" loading="lazy">
+      </div>
       <div class="tech-name">Power Automate</div>
       <div class="tech-desc">Flux · Workflows</div>
-      <div class="tech-level"><div class="tech-level-fill" style="--lw:0.92"></div></div>
+      <div class="tech-level"><div class="tech-level-fill" style="--lw:1"></div></div>
     </div>
 
-    <!-- SharePoint -->
     <div class="tech-card reveal reveal-delay-2">
       <div class="tech-icon">
-        <img src="images/sharepoint.svg" alt="SharePoint" loading="lazy">
-      </div>/div>/div>/div>
+        <img src="images/ms-sharepoint.svg" alt="SharePoint" loading="lazy">
+      </div>
       <div class="tech-name">SharePoint</div>
       <div class="tech-desc">Admin · Intranet</div>
-      <div class="tech-level"><div class="tech-level-fill" style="--lw:0.88"></div></div>
+      <div class="tech-level"><div class="tech-level-fill" style="--lw:1"></div></div>
     </div>
 
-    <!-- Dataverse -->
     <div class="tech-card reveal reveal-delay-3">
       <div class="tech-icon">
-        <img src="images/dataverse.svg" alt="Dataverse" loading="lazy">
-      </div>/div>/div>/div>
+        <img src="images/Dataverse_scalable.svg" alt="Dataverse" loading="lazy">
+      </div>
       <div class="tech-name">Dataverse</div>
       <div class="tech-desc">BDD · Modèle données</div>
-      <div class="tech-level"><div class="tech-level-fill" style="--lw:0.86"></div></div>
+      <div class="tech-level"><div class="tech-level-fill" style="--lw:1"></div></div>
     </div>
 
-    <!-- Power BI -->
-    <div class="tech-card reveal">
-      <div class="tech-icon">
-        <img src="images/power-bi.svg" alt="Power BI" loading="lazy">
-      </div>/div>/div>/div>
-      <div class="tech-name">Power BI</div>
-      <div class="tech-desc">Rapports · KPIs</div>
-      <div class="tech-level"><div class="tech-level-fill" style="--lw:0.82"></div></div>
     </div>
-
-    <!-- Python -->
-    <div class="tech-card reveal reveal-delay-1">
-      <div class="tech-icon">
-        <img src="images/python.svg" alt="Python" loading="lazy">
-      </div>/div>/div>/div>
-      <div class="tech-name">Python</div>
-      <div class="tech-desc">Scripts · Automatisation</div>
-      <div class="tech-level"><div class="tech-level-fill" style="--lw:0.85"></div></div>
-    </div>
-
-    <!-- React -->
-    <div class="tech-card reveal reveal-delay-2">
-      <div class="tech-icon">
-        <img src="images/react.svg" alt="React" loading="lazy">
-      </div>/div>/div>/div>
-      <div class="tech-name">React</div>
-      <div class="tech-desc">Web · Interfaces</div>
-      <div class="tech-level"><div class="tech-level-fill" style="--lw:0.8"></div></div>
-    </div>
-
-    <!-- Azure AI -->
-    <div class="tech-card reveal reveal-delay-3">
-      <div class="tech-icon">
-        <img src="images/azure.svg" alt="Azure AI" loading="lazy">
-      </div>/div>/div>/div>
-      <div class="tech-name">Azure AI</div>
-      <div class="tech-desc">AI Builder · Copilot</div>
-      <div class="tech-level"><div class="tech-level-fill" style="--lw:0.75"></div></div>
-    </div>
-
-  </div>
 </section>
 
 <!-- SERVICES -->
@@ -1674,9 +1681,9 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
       </div>
     </div>
     <div class="testi-controls">
-      <button class="testi-btn" onclick="testiPrev()"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button class="testi-btn" onclick="testiPrev()" aria-label="Témoignage précédent" type="button"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
       <div class="testi-dots" id="testiDots"></div>
-      <button class="testi-btn" onclick="testiNext()"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+      <button class="testi-btn" onclick="testiNext()" aria-label="Témoignage suivant" type="button"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
     </div>
   </div>
 </section>
@@ -1708,41 +1715,100 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="section-header reveal"><div class="section-tag">// Contact</div><h2 class="section-title">DÉMARRONS VOTRE <span class="accent">PROJET</span></h2><div class="section-line"></div></div>
+  <div class="section-header reveal">
+    <div class="section-tag">// Contact</div>
+    <h2 class="section-title">DÉMARRONS VOTRE <span class="accent">PROJET</span></h2>
+    <div class="section-line"></div>
+  </div>
   <div class="contact-container">
     <div class="contact-info reveal">
       <h3 class="contact-title">PARLONS DE<br><span class="accent">VOS BESOINS</span></h3>
       <p class="contact-sub">Premier échange 100% gratuit et sans engagement. On analyse ensemble votre situation et je vous propose une solution adaptée à vos objectifs et votre budget.</p>
+      
       <div class="contact-links">
-        <a href="/cdn-cgi/l/email-protection#32541c50574b575c725d40535c55571c5440" class="contact-link"><div class="contact-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="contact-link-label">Email</div><div class="contact-link-val"><span class="__cf_email__" data-cfemail="13753d71766a767d537c61727d74763d7561">[email&#160;protected]</span></div></div></a>
-        <a href="tel:+33783333375" class="contact-link"><div class="contact-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div><div><div class="contact-link-label">Téléphone</div><div class="contact-link-val">+33 7 83 33 33 75</div></div></a>
-        <a href="https://linkedin.com/in/florian-beyen" target="_blank" class="contact-link"><div class="contact-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div><div><div class="contact-link-label">LinkedIn</div><div class="contact-link-val">florian-beyen</div></div></a>
+        <a href="mailto:f.beyen@orange.fr" class="contact-link">
+          <div class="contact-link-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contact-link-label">Email</div>
+            <div class="contact-link-val">f.beyen@orange.fr</div>
+          </div>
+        </a>
+
+        <a href="tel:+33783333375" class="contact-link">
+          <div class="contact-link-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="contact-link-label">Téléphone</div>
+            <div class="contact-link-val">+33 7 83 33 33 75</div>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/florian-beyen" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <div class="contact-link-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <div class="contact-link-label">LinkedIn</div>
+            <div class="contact-link-val">Florian Beyen</div>
+          </div>
+        </a>
       </div>
     </div>
+
     <div class="reveal reveal-delay-2">
-      <div class="setup-notice" id="setupNotice">
-        ⚙️ <strong>Activation Formspree</strong> — Créez un compte gratuit sur <a href="https://formspree.io" target="_blank">formspree.io</a>, créez un formulaire avec votre adresse <strong>f.beyen@orange.fr</strong>, puis remplacez <code>YOUR_FORM_ID</code> dans le JS. Compatible Zimbra, fonctionne dans Outlook.
-      </div>
-      <form class="contact-form" id="contactForm">
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/xvzwwazl" method="POST">
         <div class="form-row">
-          <div class="form-group"><label class="form-label">Prénom *</label><input type="text" class="form-input" id="f_prenom" placeholder="Jean" required></div>
-          <div class="form-group"><label class="form-label">Nom *</label><input type="text" class="form-input" id="f_nom" placeholder="Dupont" required></div>
+          <div class="form-group">
+            <label class="form-label" for="f_prenom">Prénom *</label>
+            <input type="text" class="form-input" id="f_prenom" name="prenom" placeholder="Jean" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f_nom">Nom *</label>
+            <input type="text" class="form-input" id="f_nom" name="nom" placeholder="Dupont" required>
+          </div>
         </div>
-        <div class="form-group"><label class="form-label">Email *</label><input type="email" class="form-input" id="f_email" placeholder="jean@entreprise.fr" required></div>
+
+        <div class="form-group">
+          <label class="form-label" for="f_email">Email *</label>
+          <input type="email" class="form-input" id="f_email" name="email" placeholder="jean@entreprise.fr" required>
+        </div>
+
         <div class="form-row">
-          <div class="form-group"><label class="form-label">Entreprise</label><input type="text" class="form-input" id="f_entreprise" placeholder="Votre entreprise"></div>
-          <div class="form-group"><label class="form-label">Téléphone</label><input type="tel" class="form-input" id="f_tel" placeholder="+33 6 XX XX XX XX"></div>
+          <div class="form-group">
+            <label class="form-label" for="f_entreprise">Entreprise</label>
+            <input type="text" class="form-input" id="f_entreprise" name="entreprise" placeholder="Votre entreprise">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f_tel">Téléphone</label>
+            <input type="tel" class="form-input" id="f_tel" name="telephone" placeholder="+33 6 XX XX XX XX">
+          </div>
         </div>
-        <div class="form-group"><label class="form-label">Besoin principal *</label>
-          <select class="form-select form-input" id="f_service" required>
+
+        <div class="form-group">
+          <label class="form-label" for="f_service">Besoin principal *</label>
+          <select class="form-select form-input" id="f_service" name="service" required>
             <option value="">Sélectionner un service...</option>
-            <option>Application Power Apps</option><option>Automatisation Power Automate</option>
-            <option>Administration SharePoint</option><option>Dashboard Power BI</option>
-            <option>Intégration IA / Copilot</option><option>Conseil & Audit</option><option>Autre</option>
+            <option>Application Power Apps</option>
+            <option>Automatisation Power Automate</option>
+            <option>Administration SharePoint</option>
+            <option>Dashboard Power BI</option>
+            <option>Intégration IA / Copilot</option>
+            <option>Conseil & Audit</option>
+            <option>Autre</option>
           </select>
         </div>
-        <div class="form-group"><label class="form-label">Décrivez votre projet *</label><textarea class="form-textarea" id="f_message" placeholder="Parlez-moi de vos processus actuels, des problèmes rencontrés et de l'impact que vous souhaitez avoir..." required></textarea></div>
-        <button type="submit" class="btn-submit" id="submitBtn">Envoyer ma demande →</button>
+
+        <div class="form-group">
+          <label class="form-label" for="f_message">Décrivez votre projet *</label>
+          <textarea class="form-textarea" id="f_message" name="message" placeholder="Parlez-moi de vos processus actuels..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit" id="submitBtn">
+          Envoyer ma demande →
+        </button>
       </form>
     </div>
   </div>
@@ -1778,9 +1844,9 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
 // 2. Créez un nouveau formulaire (New Form)
 // 3. Collez votre Form ID ci-dessous (ex: "xpwzgkqr")
 // ═══════════════════════════════════════════════════════════
-const FORMSPREE_ID = 'YOUR_FORM_ID';
+const FORMSPREE_ID = 'xvzwwazl'; // <--- Mettez votre ID ici
 
-if(FORMSPREE_ID !== 'YOUR_FORM_ID'){
+if(FORMSPREE_ID !== 'xvzwwazl'){
   document.getElementById('setupNotice').style.display = 'none';
 }
 
@@ -1797,15 +1863,23 @@ document.querySelectorAll('a,button,.service-card,.why-item,.contact-link,.faq-q
 
 // NAV SCROLL + ACTIVE SECTION
 const nav = document.getElementById('nav');
-window.addEventListener('scroll',()=>{
+window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 50);
   document.getElementById('floatingCta').classList.toggle('visible', window.scrollY > 300);
-  // Active nav link
-  const sections = document.querySelectorAll('section[id]');
+
+  const sections = [...document.querySelectorAll('section[id]')]
+    .filter(s => getComputedStyle(s).display !== 'none');
+
   let current = '';
-  sections.forEach(s=>{ if(window.scrollY >= s.offsetTop-120) current=s.getAttribute('id'); });
-  document.querySelectorAll('.nav-links a').forEach(a=>{
-    a.classList.toggle('active', a.getAttribute('href')==='#'+current);
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 140) {
+      current = s.getAttribute('id');
+    }
+  });
+
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    const href = a.getAttribute('href');
+    a.classList.toggle('active', href === '#' + current);
   });
 });
 
@@ -1906,20 +1980,9 @@ document.getElementById('contactForm').addEventListener('submit', async function
   e.preventDefault();
   const btn = document.getElementById('submitBtn');
 
-  // Mode démo si pas encore configuré
-  if (FORMSPREE_ID === 'YOUR_FORM_ID') {
-    btn.disabled = true;
-    btn.textContent = '⏳ Simulation...';
-    await new Promise(r => setTimeout(r, 700));
-    showNotif('✓ Démo OK — Ajoutez votre Formspree ID pour l\'envoi réel');
-    btn.disabled = false;
-    btn.textContent = 'Envoyer ma demande →';
-    this.reset();
-    return;
-  }
-
+  // 1. On bloque le bouton et on change le texte
   btn.disabled = true;
-  btn.textContent = '⏳ Envoi en cours...';
+  btn.textContent = '⏳ ENVOI EN COURS...';
 
   const payload = {
     _replyto:   document.getElementById('f_email').value,
@@ -1939,18 +2002,26 @@ document.getElementById('contactForm').addEventListener('submit', async function
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body:    JSON.stringify(payload)
     });
-    const data = await res.json();
+
     if (res.ok) {
+      // 2. SI SUCCÈS : On affiche le message de réussite
       showNotif('✓ Message envoyé ! Je vous réponds sous 24h.');
-      document.getElementById('setupNotice').style.display = 'none';
+      
+      // On cache la notice de setup si elle existe
+      const setupNotice = document.getElementById('setupNotice');
+      if(setupNotice) setupNotice.style.display = 'none';
+
+      // 3. ON RESET LE FORMULAIRE
       this.reset();
     } else {
+      const data = await res.json();
       throw new Error(data.error || 'Erreur ' + res.status);
     }
   } catch(err) {
-    console.error('Formspree:', err);
+    console.error('Formspree Error:', err);
     showNotif('⚠ Erreur d\'envoi — écrivez à f.beyen@orange.fr', true);
   } finally {
+    // 4. ON RÉAFFICHE LE BOUTON INITIAL
     btn.disabled = false;
     btn.textContent = 'Envoyer ma demande →';
   }
@@ -2353,9 +2424,37 @@ function showBlog(){
 
 function hideBlog(){
   document.getElementById('blog').style.display = 'none';
-  document.querySelectorAll('#hero,.marquee-section,#founder-intro,#stack,#services,#cases,#impact,#why,#why-platform,#web-alt,#testimonials,#process,#faq,#contact,footer').forEach(el => {
-    if(el) el.style.display = '';
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const href = a.getAttribute('href');
+    const target = document.querySelector(href);
+    if (!target) return;
+
+    e.preventDefault();
+
+    // Si on est dans le blog et qu'on clique ailleurs que sur #blog
+    if (document.getElementById('blog').style.display === 'block' && href !== '#blog') {
+      hideBlog();
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          const realTarget = document.querySelector(href);
+          if (realTarget) {
+            realTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+      return;
+    }
+
+    if (href === '#blog') {
+      showBlog();
+      return;
+    }
+
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
+});
   window.scrollTo({top:0, behavior:'smooth'});
 }
 
