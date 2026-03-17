@@ -6,6 +6,8 @@
 <title>Failorn IT — Solutions Power Platform & Automatisation</title>
 <meta name="description" content="Failorn IT — Développement d'applications Power Apps, automatisation Power Automate, SharePoint, Power BI. Expert freelance Florian Beyen.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" type="image/png" href="images/failorn-logo.png">
+<link rel="apple-touch-icon" href="images/failorn-logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -408,8 +410,8 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
 .section-subtitle{font-size:.95rem;color:var(--muted);max-width:580px;margin:12px auto 0;line-height:1.7}
 
 /* ── PORTFOLIO FEATURED ── */
-.portfolio-featured{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:var(--shadow-md);background:var(--bg);margin-bottom:20px}
-.pf-visual{background:linear-gradient(135deg,#eff6ff,#dbeafe);padding:48px 40px;display:flex;align-items:center;justify-content:center;position:relative;min-height:400px}
+.portfolio-featured{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:var(--shadow-md);background:var(--bg);margin-bottom:20px;min-height:460px}
+.pf-visual{background:#060e1f;padding:0;position:relative;overflow:hidden;min-height:460px}
 .pf-badge-float{position:absolute;top:20px;right:20px;background:var(--bg);border:1px solid var(--border);padding:6px 12px;border-radius:20px;font-size:.72rem;font-weight:700;color:var(--ink);box-shadow:var(--shadow)}
 .pf-mockup{width:100%;max-width:340px;background:var(--bg);border-radius:10px;box-shadow:0 8px 40px rgba(37,99,235,.15);overflow:hidden;border:1px solid var(--border)}
 .pf-mockup-bar{height:32px;background:#f1f5f9;display:flex;align-items:center;gap:6px;padding:0 14px;border-bottom:1px solid var(--border)}
@@ -627,7 +629,7 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
 /* Blog mobile */
 @media(max-width:900px){
   .portfolio-featured{grid-template-columns:1fr}
-  .pf-visual{min-height:200px;padding:28px}
+  .pf-visual{min-height:220px;padding:0}
   .pf-metrics{grid-template-columns:repeat(2,1fr)}
   .portfolio-grid{grid-template-columns:1fr}
   .blog-grid{grid-template-columns:1fr}
@@ -681,7 +683,7 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
 [data-theme="dark"] .fi-badge{background:var(--bg3);border-color:var(--border2)}
 [data-theme="dark"] .tech-card{background:var(--bg2)}
 [data-theme="dark"] .case-header,.porto-visual,.case-tools,.ba-box{background:var(--bg3)}
-[data-theme="dark"] .pf-visual{background:linear-gradient(135deg,rgba(59,130,246,.12),rgba(59,130,246,.06))}
+[data-theme="dark"] .pf-visual{background:#060e1f}
 [data-theme="dark"] .pf-mockup{background:var(--bg3);border-color:var(--border2)}
 [data-theme="dark"] .pf-mockup-bar{background:var(--bg);border-color:var(--border)}
 [data-theme="dark"] .pf-screen-nav{background:var(--bg2);border-color:var(--border)}
@@ -874,8 +876,6 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
     <div class="marquee-item"><span class="marquee-dot"></span>Copilot Studio</div>
     <div class="marquee-item"><span class="marquee-dot"></span>React & Python</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Ingénieur EIL ULCO</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>BNP Paribas Fortis — Bruxelles</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>TOEIC 920</div>
     <!-- duplicate for infinite loop -->
     <div class="marquee-item"><span class="marquee-dot"></span>Power Apps Expert</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Power Automate</div>
@@ -886,8 +886,6 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
     <div class="marquee-item"><span class="marquee-dot"></span>Copilot Studio</div>
     <div class="marquee-item"><span class="marquee-dot"></span>React & Python</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Ingénieur EIL ULCO</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>BNP Paribas Fortis — Bruxelles</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>TOEIC 920</div>
   </div>
 </div>
 
@@ -901,19 +899,11 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
       <div class="fi-eyebrow">Le fondateur</div>
       <div class="fi-name">Florian BEYEN</div>
       <div class="fi-role">Ingénieur Informatique — Fondateur Failorn IT</div>
-      <p class="fi-bio">Diplômé ingénieur de l'EIL Côte d'Opale (ULCO) et aguerri en environnement bancaire international chez BNP Paribas Fortis à Bruxelles, je transforme vos processus métiers en solutions digitales puissantes et accessibles. Autonome, rigoureux et passionné par la tech, j'ai fondé Failorn IT pour mettre cette expertise à votre service, sans intermédiaire.</p>
+      <p class="fi-bio">Diplômé ingénieur de l'EIL Côte d'Opale (ULCO), je transforme vos processus métiers en solutions digitales puissantes et accessibles. Autonome, rigoureux et passionné par la tech, j'ai fondé Failorn IT pour mettre cette expertise à votre service, sans intermédiaire.</p>
     </div>
     <div class="fi-right">
       <div class="fi-timeline">
         <div class="fi-tl-title">// Parcours professionnel</div>
-        <div class="fi-tl-item">
-          <div class="fi-tl-dot"><div class="fi-tl-dot-inner"></div></div>
-          <div class="fi-tl-content">
-            <div class="fi-tl-date">Déc. 2025 — Actuellement</div>
-            <div class="fi-tl-role">Consultant IT Expert Power Platform (VIE)</div>
-            <div class="fi-tl-company">Amaris Consulting · BNP Paribas Fortis, Bruxelles</div>
-          </div>
-        </div>
         <div class="fi-tl-item">
           <div class="fi-tl-dot"><div class="fi-tl-dot-inner"></div></div>
           <div class="fi-tl-content">
@@ -995,8 +985,37 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
       <div class="tech-desc">BDD · Modèle données</div>
       <div class="tech-level"><div class="tech-level-fill" style="--lw:1"></div></div>
     </div>
-
+    <div class="tech-card reveal">
+      <div class="tech-icon">
+        <img src="images/power-bi-icon.svg" alt="Power BI" loading="lazy">
+      </div>
+      <div class="tech-name">Power BI</div>
+      <div class="tech-desc">Dashboards · KPIs</div>
+      <div class="tech-level"><div class="tech-level-fill" style="--lw:1"></div></div>
     </div>
+    <div class="tech-card reveal reveal-delay-3">
+      <div class="tech-icon">
+        <img src="images/python-svgrepo-com.svg" alt="Python" loading="lazy">
+      </div>
+      <div class="tech-name">Python</div>
+      <div class="tech-desc">Scripting · Automatisation</div>
+      <div class="tech-level"><div class="tech-level-fill" style="--lw:0.9"></div></div>
+    </div>
+    <div class="tech-card reveal reveal-delay-2">
+      <div class="tech-icon">
+        <img src="images/CopilotStudio_scalable.svg" alt="Copilot Studio" loading="lazy">
+      </div>
+      <div class="tech-name">Copilot Studio</div>
+      <div class="tech-desc">Intégration IA · Chatbots</div>
+      <div class="tech-level"><div class="tech-level-fill" style="--lw:0.85"></div></div>
+    </div>
+    <div class="tech-card reveal reveal-delay-1">
+      <div class="tech-icon">
+        <img src="images/AIBuilder_scalable.svg" alt="Azure AI Builder" loading="lazy">
+      </div>
+      <div class="tech-name">Azure AI Builder</div>
+      <div class="tech-desc">IA · Modèles pré-entraînés</div>
+      <div class="tech-level"><div class="tech-level-fill" style="--lw:0.8"></div></div>
 </section>
 
 <!-- SERVICES -->
@@ -1022,68 +1041,82 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
   </div>
 
   <!-- FEATURED PROJECT -->
-  <div class="portfolio-featured reveal" style="max-width:1200px;margin:0 auto 20px">
-    <div class="pf-visual">
-      <div class="pf-mockup">
-        <div class="pf-mockup-bar"><span></span><span></span><span></span></div>
-        <div class="pf-mockup-screen">
-          <div class="pf-screen-nav">
-            <div class="pf-snav-logo"></div>
-            <div class="pf-snav-links"><div></div><div></div><div></div></div>
-          </div>
-          <div class="pf-screen-body">
-            <div class="pf-sb-sidebar">
-              <div class="pf-sb-item active"></div>
-              <div class="pf-sb-item"></div>
-              <div class="pf-sb-item"></div>
-              <div class="pf-sb-item"></div>
-            </div>
-            <div class="pf-sb-main">
-              <div class="pf-sb-header"></div>
-              <div class="pf-sb-cards">
-                <div class="pf-sb-card blue"></div>
-                <div class="pf-sb-card green"></div>
-                <div class="pf-sb-card orange"></div>
-              </div>
-              <div class="pf-sb-table">
-                <div class="pf-sb-row"></div>
-                <div class="pf-sb-row alt"></div>
-                <div class="pf-sb-row"></div>
-                <div class="pf-sb-row alt"></div>
-                <div class="pf-sb-row"></div>
-              </div>
-            </div>
-          </div>
+  <!-- PROJET PHARE -->
+  <style>
+    .phare-wrap{max-width:1200px;margin:0 auto 28px;border-radius:16px;overflow:hidden;box-shadow:0 8px 48px rgba(0,0,0,.28);position:relative}
+    /* Desktop : photo gauche + texte droite côte à côte */
+    .phare-inner{display:grid;grid-template-columns:1fr 1fr;min-height:500px}
+    .phare-photo{position:relative;overflow:hidden;min-height:500px}
+    .phare-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+    .phare-photo-overlay{position:absolute;inset:0;background:linear-gradient(to right,transparent 60%,rgba(6,14,31,.85) 100%)}
+    .phare-badge{position:absolute;bottom:20px;left:20px;display:flex;align-items:center;gap:7px;background:rgba(0,0,0,.45);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.2);padding:7px 16px;border-radius:30px}
+    .phare-content{background:var(--bg2);padding:44px 40px;display:flex;flex-direction:column;justify-content:center;gap:16px}
+    /* Mobile : photo en haut (hauteur fixe) + texte en dessous */
+    @media(max-width:900px){
+      .phare-inner{grid-template-columns:1fr;grid-template-rows:240px auto}
+      .phare-photo{min-height:240px}
+      .phare-photo-overlay{background:linear-gradient(to bottom,transparent 40%,rgba(6,14,31,.7) 100%)}
+      .phare-content{padding:28px 22px;gap:14px}
+    }
+  </style>
+  <div class="phare-wrap reveal">
+    <div class="phare-inner">
+
+      <!-- GAUCHE : Photo -->
+      <div class="phare-photo">
+        <img src="images/Projet_phare.png" alt="Mini-ERP DOD&amp;Cie">
+        <div class="phare-photo-overlay"></div>
+        <div class="phare-badge">
+          <span style="font-size:.85rem">🏆</span>
+          <span style="font-size:.65rem;font-weight:700;color:#fff;letter-spacing:.8px;text-transform:uppercase">Projet phare</span>
         </div>
       </div>
-      <div class="pf-badge-float">
-        <span>🏆</span> Projet phare
-      </div>
-    </div>
-    <div class="pf-content">
-      <div class="pf-eyebrow">
-        <span class="pf-industry">Finance & Banque · BNP Paribas Fortis</span>
-        <span class="pf-status delivered">✓ Livré</span>
-      </div>
-      <h3 class="pf-title">Plateforme RH & Workflow de Validation</h3>
-      <p class="pf-desc">Développement d'une suite d'applications Power Apps pour la gestion RH d'une équipe bancaire internationale à Bruxelles. Demandes de congés, notes de frais, onboarding collaborateur, validation managériale automatisée via Power Automate — le tout centralisé dans un intranet SharePoint repensé.</p>
-      <div class="pf-challenge">
-        <div class="pf-challenge-label">Problème initial</div>
-        <p>Des processus RH éparpillés entre emails, Excel partagés et formulaires papier. Chaque demande de congé nécessitait 4 à 6 échanges de mails et une saisie manuelle dans 3 outils différents.</p>
-      </div>
-      <div class="pf-metrics">
-        <div class="pf-metric"><div class="pf-metric-val">−87%</div><div class="pf-metric-label">Temps traitement RH</div></div>
-        <div class="pf-metric"><div class="pf-metric-val">3 semaines</div><div class="pf-metric-label">Délai de livraison</div></div>
-        <div class="pf-metric"><div class="pf-metric-val">120+</div><div class="pf-metric-label">Utilisateurs actifs</div></div>
-        <div class="pf-metric"><div class="pf-metric-val">0 mail</div><div class="pf-metric-label">Pour une demande</div></div>
-      </div>
-      <div class="pf-tools">
-        <span class="pf-tool">Power Apps</span>
-        <span class="pf-tool">Power Automate</span>
-        <span class="pf-tool">SharePoint</span>
-        <span class="pf-tool">Dataverse</span>
-        <span class="pf-tool">Power BI</span>
-        <span class="pf-tool">Teams</span>
+
+      <!-- DROITE : Contenu -->
+      <div class="phare-content">
+
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <span style="font-size:.62rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)">Édition &amp; Distribution · DOD&amp;Cie</span>
+          <span style="font-size:.62rem;font-weight:700;padding:3px 10px;border-radius:20px;color:#16a34a;background:rgba(22,163,74,.08);border:1px solid rgba(22,163,74,.2)">✓ En cours</span>
+        </div>
+
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:1.5px;color:var(--ink);line-height:1.05;margin:0">Mini-ERP de Prise<br>de Commandes Offline</h3>
+
+        <p style="font-size:.88rem;color:var(--muted);line-height:1.75;margin:0">Application Canvas Power Apps offline-first pour les représentants commerciaux en librairie. Bons de commande réutilisables, visionneuse PDF intégrée, export Excel automatique — synchronisation SharePoint à la reconnexion.</p>
+
+        <div style="border-left:3px solid var(--blue);background:var(--blue-pale);padding:11px 15px;border-radius:0 6px 6px 0">
+          <div style="font-size:.58rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:4px">Problème initial</div>
+          <p style="font-size:.81rem;color:var(--muted);line-height:1.6;margin:0">Des représentants terrain avec des Excel éparpillés, sans réseau en librairie. Fiches PDF introuvables, commandes ressaisies à la main au bureau.</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px">
+          <div style="text-align:center;padding:10px 6px;background:var(--bg);border:1px solid var(--border);border-radius:8px">
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--blue);line-height:1">100%</div>
+            <div style="font-size:.52rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--muted2);margin-top:3px;line-height:1.3">Offline<br>first</div>
+          </div>
+          <div style="text-align:center;padding:10px 6px;background:var(--bg);border:1px solid var(--border);border-radius:8px">
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--blue);line-height:1">6</div>
+            <div style="font-size:.52rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--muted2);margin-top:3px;line-height:1.3">Modules<br>intégrés</div>
+          </div>
+          <div style="text-align:center;padding:10px 6px;background:var(--bg);border:1px solid var(--border);border-radius:8px">
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:#16a34a;line-height:1">0</div>
+            <div style="font-size:.52rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--muted2);margin-top:3px;line-height:1.3">Ressaisie<br>manuelle</div>
+          </div>
+          <div style="text-align:center;padding:10px 6px;background:var(--bg);border:1px solid var(--border);border-radius:8px">
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:#16a34a;line-height:1">PDF</div>
+            <div style="font-size:.52rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--muted2);margin-top:3px;line-height:1.3">Visionneuse<br>intégrée</div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span class="pf-tool">Power Apps</span>
+          <span class="pf-tool">Power Automate</span>
+          <span class="pf-tool">SharePoint</span>
+          <span class="pf-tool">Dataverse</span>
+          <span class="pf-tool">PDF Control</span>
+          <span class="pf-tool">Excel Export</span>
+        </div>
+
       </div>
     </div>
   </div>
@@ -1092,20 +1125,8 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
   <div class="portfolio-grid" style="max-width:1200px;margin:0 auto">
 
     <div class="porto-card reveal">
-      <div class="porto-visual porto-v1">
-        <div class="porto-mock-mobile">
-          <div class="porto-mm-screen">
-            <div class="porto-mm-header"></div>
-            <div class="porto-mm-map"></div>
-            <div class="porto-mm-cards">
-              <div class="porto-mm-card"></div>
-              <div class="porto-mm-card"></div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="porto-body">
-        <div class="porto-meta"><span class="porto-industry">BTP & Chantiers</span><span class="porto-badge">✓ Livré</span></div>
+        <div class="porto-meta"><span class="porto-industry">BTP &amp; Chantiers</span><span class="porto-badge">✓ Livré</span></div>
         <h4 class="porto-title">App Gestion de Chantiers</h4>
         <p class="porto-desc">Canvas App mobile-first pour le suivi terrain : avancement, photos géolocalisées, bons d'intervention et génération PDF automatique. Utilisée hors connexion avec sync à la reconnexion.</p>
         <div class="porto-results">
@@ -1117,23 +1138,9 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
     </div>
 
     <div class="porto-card reveal reveal-delay-1">
-      <div class="porto-visual porto-v2">
-        <div class="porto-dashboard-mock">
-          <div class="porto-dm-title"></div>
-          <div class="porto-dm-charts">
-            <div class="porto-dm-chart-bar">
-              <div style="height:60%"></div><div style="height:85%"></div><div style="height:45%"></div><div style="height:95%"></div><div style="height:70%"></div>
-            </div>
-            <div class="porto-dm-chart-donut"></div>
-          </div>
-          <div class="porto-dm-kpis">
-            <div class="porto-dm-kpi"></div><div class="porto-dm-kpi"></div><div class="porto-dm-kpi"></div>
-          </div>
-        </div>
-      </div>
       <div class="porto-body">
         <div class="porto-meta"><span class="porto-industry">Industrie Manufacturière</span><span class="porto-badge">✓ Livré</span></div>
-        <h4 class="porto-title">Dashboard Qualité & Production</h4>
+        <h4 class="porto-title">Dashboard Qualité &amp; Production</h4>
         <p class="porto-desc">Tableaux de bord Power BI temps réel connectés à l'ERP et aux lignes de production. Suivi des non-conformités, taux de rebut, OEE et alertes automatiques vers Teams.</p>
         <div class="porto-results">
           <div class="porto-result"><strong>−65%</strong> temps reporting</div>
@@ -1144,28 +1151,9 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
     </div>
 
     <div class="porto-card reveal reveal-delay-2">
-      <div class="porto-visual porto-v3">
-        <div class="porto-form-mock">
-          <div class="porto-fm-title"></div>
-          <div class="porto-fm-fields">
-            <div class="porto-fm-row"><div class="porto-fm-label"></div><div class="porto-fm-input"></div></div>
-            <div class="porto-fm-row"><div class="porto-fm-label"></div><div class="porto-fm-input"></div></div>
-            <div class="porto-fm-row"><div class="porto-fm-label"></div><div class="porto-fm-select"></div></div>
-          </div>
-          <div class="porto-fm-flow">
-            <div class="porto-fm-step done"></div>
-            <div class="porto-fm-arrow"></div>
-            <div class="porto-fm-step done"></div>
-            <div class="porto-fm-arrow"></div>
-            <div class="porto-fm-step active"></div>
-            <div class="porto-fm-arrow"></div>
-            <div class="porto-fm-step"></div>
-          </div>
-        </div>
-      </div>
       <div class="porto-body">
-        <div class="porto-meta"><span class="porto-industry">Logistique & Supply Chain</span><span class="porto-badge">✓ Livré</span></div>
-        <h4 class="porto-title">Portail Fournisseurs & Commandes</h4>
+        <div class="porto-meta"><span class="porto-industry">Logistique &amp; Supply Chain</span><span class="porto-badge">✓ Livré</span></div>
+        <h4 class="porto-title">Portail Fournisseurs &amp; Commandes</h4>
         <p class="porto-desc">Application Power Apps pour la gestion des achats et relations fournisseurs. Workflow de validation multi-niveaux, alertes de délai, suivi des commandes et réconciliation automatique.</p>
         <div class="porto-results">
           <div class="porto-result"><strong>12 → 1</strong> outil unique</div>
@@ -1176,23 +1164,8 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
     </div>
 
     <div class="porto-card reveal">
-      <div class="porto-visual porto-v4">
-        <div class="porto-ai-mock">
-          <div class="porto-ai-header">
-            <div class="porto-ai-avatar"></div>
-            <div class="porto-ai-name"></div>
-          </div>
-          <div class="porto-ai-chat">
-            <div class="porto-ai-msg bot"></div>
-            <div class="porto-ai-msg user"></div>
-            <div class="porto-ai-msg bot short"></div>
-            <div class="porto-ai-msg user short"></div>
-          </div>
-          <div class="porto-ai-input"></div>
-        </div>
-      </div>
       <div class="porto-body">
-        <div class="porto-meta"><span class="porto-industry">Services & Conseil</span><span class="porto-badge">✓ Livré</span></div>
+        <div class="porto-meta"><span class="porto-industry">Services &amp; Conseil</span><span class="porto-badge">✓ Livré</span></div>
         <h4 class="porto-title">Assistant IA Interne (Copilot Studio)</h4>
         <p class="porto-desc">Chatbot interne sur Copilot Studio connecté à la base documentaire SharePoint. Répond aux questions RH, IT et procédures internes. Intégré dans Teams avec escalade vers un agent humain.</p>
         <div class="porto-results">
@@ -1204,24 +1177,8 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
     </div>
 
     <div class="porto-card reveal reveal-delay-1">
-      <div class="porto-visual porto-v5">
-        <div class="porto-stock-mock">
-          <div class="porto-sm-header">
-            <div class="porto-sm-search"></div>
-            <div class="porto-sm-btn"></div>
-          </div>
-          <div class="porto-sm-table">
-            <div class="porto-sm-thead"><div></div><div></div><div></div><div></div></div>
-            <div class="porto-sm-row"><div></div><div class="num"></div><div class="ok"></div><div class="num"></div></div>
-            <div class="porto-sm-row alt"><div></div><div class="num"></div><div class="warn"></div><div class="num"></div></div>
-            <div class="porto-sm-row"><div></div><div class="num"></div><div class="ok"></div><div class="num"></div></div>
-            <div class="porto-sm-row alt"><div></div><div class="num"></div><div class="err"></div><div class="num"></div></div>
-          </div>
-          <div class="porto-sm-footer"><div></div></div>
-        </div>
-      </div>
       <div class="porto-body">
-        <div class="porto-meta"><span class="porto-industry">Commerce & Distribution</span><span class="porto-badge">✓ Livré</span></div>
+        <div class="porto-meta"><span class="porto-industry">Commerce &amp; Distribution</span><span class="porto-badge">✓ Livré</span></div>
         <h4 class="porto-title">Gestion de Stock en Temps Réel</h4>
         <p class="porto-desc">Application de gestion des stocks sur tablette et mobile. Scan QR code, alertes seuils de réapprovisionnement, historique des mouvements et synchronisation automatique avec le logiciel comptable.</p>
         <div class="porto-results">
@@ -1233,23 +1190,9 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
     </div>
 
     <div class="porto-card reveal reveal-delay-2">
-      <div class="porto-visual porto-v6">
-        <div class="porto-site-mock">
-          <div class="porto-site-hero">
-            <div class="porto-site-h-title"></div>
-            <div class="porto-site-h-sub"></div>
-            <div class="porto-site-h-btn"></div>
-          </div>
-          <div class="porto-site-features">
-            <div class="porto-site-feat"></div>
-            <div class="porto-site-feat"></div>
-            <div class="porto-site-feat"></div>
-          </div>
-        </div>
-      </div>
       <div class="porto-body">
-        <div class="porto-meta"><span class="porto-industry">TPE & Artisans</span><span class="porto-badge">✓ Livré</span></div>
-        <h4 class="porto-title">Site Web React — Vitrine & Devis</h4>
+        <div class="porto-meta"><span class="porto-industry">TPE &amp; Artisans</span><span class="porto-badge">✓ Livré</span></div>
+        <h4 class="porto-title">Site Web React — Vitrine &amp; Devis</h4>
         <p class="porto-desc">Site vitrine React/Next.js avec module de devis en ligne intégré, agenda de réservation et back-office simplifié. Design sur-mesure, performance maximale (100/100 Lighthouse), déploiement cloud.</p>
         <div class="porto-results">
           <div class="porto-result"><strong>+3x</strong> demandes de devis</div>
@@ -1287,7 +1230,7 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
       <div class="why-center-card"><div class="center-badge"><div class="badge-num">5★</div><div class="badge-txt">Satisfaction<br>client</div></div></div>
     </div>
     <div class="why-list">
-      <div class="why-item reveal"><span class="why-idx">01</span><div><div class="why-title">Expertise Power Platform de haut niveau</div><div class="why-desc">Formé à l'EIL ULCO et aguerri en environnement bancaire international (BNP Paribas Fortis), je maîtrise l'écosystème Microsoft à un niveau expert. Pas de courbe d'apprentissage sur vos projets.</div></div></div>
+      <div class="why-item reveal"><span class="why-idx">01</span><div><div class="why-title">Expertise Power Platform de haut niveau</div><div class="why-desc">Formé à l'EIL ULCO, je maîtrise l'écosystème Microsoft à un niveau expert. Pas de courbe d'apprentissage sur vos projets.</div></div></div>
       <div class="why-item reveal reveal-delay-1"><span class="why-idx">02</span><div><div class="why-title">Un seul interlocuteur, du début à la fin</div><div class="why-desc">En tant qu'auto-entrepreneur, vous travaillez directement avec moi. Décisions rapides, communication directe, pas de bureaucratie. Je suis personnellement investi dans votre succès.</div></div></div>
       <div class="why-item reveal reveal-delay-2"><span class="why-idx">03</span><div><div class="why-title">Low-code = puissance à coût maîtrisé</div><div class="why-desc">Le low-code permet de livrer des applications robustes 3x plus vite qu'un développement classique. Budget optimisé, time-to-market réduit, maintenance simplifiée.</div></div></div>
       <div class="why-item reveal reveal-delay-3"><span class="why-idx">04</span><div><div class="why-title">Approche terrain + rigueur ingénieur</div><div class="why-desc">Je traduis vos besoins opérationnels en solutions techniques qui font sens pour vos équipes sur le terrain. Architecture solide, code maintenable, documentation complète.</div></div></div>
@@ -1435,28 +1378,28 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
       <div class="web-alt-right">
         <div class="web-tech-grid">
           <div class="web-tech-item">
-            <img src="images/react.svg" alt="React" loading="lazy">
+            <img src="images/reactjs-svgrepo-com.svg" alt="React" loading="lazy">
             <span>React</span>
           </div>
           <div class="web-tech-item">
-            <img src="images/nextjs.svg" alt="Next.js" loading="lazy">
+            <img src="images/nextjs-icon-svgrepo-com.svg" alt="Next.js" loading="lazy">
             <span>Next.js</span>
           </div>
           <div class="web-tech-item">
-            <img src="images/python.svg" alt="Python" loading="lazy">
+            <img src="images/python-svgrepo-com.svg" alt="Python" loading="lazy">
             <span>Python</span>
           </div>
           <div class="web-tech-item">
-            <img src="images/javascript.svg" alt="JavaScript" loading="lazy">
+            <img src="images/javascript-logo-svgrepo-com.svg" alt="JavaScript" loading="lazy">
             <span>JavaScript</span>
           </div>
           <div class="web-tech-item">
-            <img src="images/typescript.svg" alt="TypeScript" loading="lazy">
+            <img src="images/typescript-icon-svgrepo-com.svg" alt="TypeScript" loading="lazy">
             <span>TypeScript</span>
           </div>
           <div class="web-tech-item">
-            <img src="images/azure.svg" alt="REST APIs" loading="lazy">
-            <span>REST APIs</span>
+            <img src="images/vitejs-svgrepo-com.svg" alt="Vite" loading="lazy">
+            <span>Vite</span>
           </div>
         </div>
 
@@ -1545,36 +1488,6 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
             </div>
           </div>
 
-          <div class="blog-card" data-cat="ia" onclick="openArticle(3)">
-            <div class="blog-card-visual">
-              <div class="bc-icon">🤖</div>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">
-                <span class="blog-cat ia">IA & Copilot</span>
-                <span class="blog-date">28 jan. 2025</span>
-              </div>
-              <h4 class="blog-card-title">Copilot Studio en 2025 : ce qu'il peut vraiment faire (et ce qu'il ne peut pas)</h4>
-              <p class="blog-card-desc">Retour terrain sur 3 projets de chatbot interne avec Copilot Studio. Les vraies capacités, les limites réelles et les bonnes pratiques.</p>
-              <div class="blog-card-footer"><span class="blog-read">10 min</span><span>Lire →</span></div>
-            </div>
-          </div>
-
-          <div class="blog-card" data-cat="retour" onclick="openArticle(4)">
-            <div class="blog-card-visual">
-              <div class="bc-icon">🏦</div>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">
-                <span class="blog-cat retour">Retour d'expérience</span>
-                <span class="blog-date">14 jan. 2025</span>
-              </div>
-              <h4 class="blog-card-title">6 mois chez BNP Paribas Fortis : ce que j'ai appris sur la transformation digitale en banque</h4>
-              <p class="blog-card-desc">Un retour honnête sur les réalités du déploiement Power Platform dans un grand groupe financier international.</p>
-              <div class="blog-card-footer"><span class="blog-read">12 min</span><span>Lire →</span></div>
-            </div>
-          </div>
-
           <div class="blog-card" data-cat="power-apps" onclick="openArticle(5)">
             <div class="blog-card-visual">
               <div class="bc-icon">🚀</div>
@@ -1621,6 +1534,113 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
             </div>
           </div>
 
+          <div class="blog-card" data-cat="power-automate" onclick="openArticle(8)">
+            <div class="blog-card-visual" style="padding:0;overflow:hidden;background:none">
+              <svg viewBox="0 0 300 100" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="100" fill="#1a1200"/>
+                <rect x="8" y="10" width="128" height="80" rx="6" fill="#1c1a00" stroke="#ca8a04" stroke-width="1"/>
+                <text x="72" y="24" text-anchor="middle" fill="#fbbf24" font-size="6.5" font-family="sans-serif" font-weight="700">STANDARD</text>
+                <rect x="16" y="30" width="112" height="12" rx="3" fill="#292400" stroke="#a16207" stroke-width="0.7"/>
+                <text x="72" y="39" text-anchor="middle" fill="#fde68a" font-size="5.5" font-family="sans-serif">SharePoint · Teams · Outlook</text>
+                <rect x="16" y="46" width="112" height="12" rx="3" fill="#292400" stroke="#a16207" stroke-width="0.7"/>
+                <text x="72" y="55" text-anchor="middle" fill="#fde68a" font-size="5.5" font-family="sans-serif">OneDrive · Excel · Forms</text>
+                <rect x="16" y="62" width="54" height="20" rx="3" fill="#15803d" stroke="#22c55e" stroke-width="0.8"/>
+                <text x="43" y="74" text-anchor="middle" fill="#bbf7d0" font-size="6" font-family="sans-serif" font-weight="600">M365 inclus</text>
+                <text x="91" y="72" fill="#86efac" font-size="5.5" font-family="sans-serif">✓ gratuit</text>
+                <text x="91" y="80" fill="#86efac" font-size="5.5" font-family="sans-serif">✓ sans surcoût</text>
+                <line x1="150" y1="5" x2="150" y2="95" stroke="#78350f" stroke-width="1" stroke-dasharray="3 2"/>
+                <rect x="164" y="10" width="128" height="80" rx="6" fill="#1a0a00" stroke="#ea580c" stroke-width="1"/>
+                <text x="228" y="24" text-anchor="middle" fill="#fb923c" font-size="6.5" font-family="sans-serif" font-weight="700">PREMIUM</text>
+                <rect x="172" y="30" width="112" height="12" rx="3" fill="#2a1200" stroke="#c2410c" stroke-width="0.7"/>
+                <text x="228" y="39" text-anchor="middle" fill="#fed7aa" font-size="5.5" font-family="sans-serif">SQL · Salesforce · SAP · HTTP</text>
+                <rect x="172" y="46" width="112" height="12" rx="3" fill="#2a1200" stroke="#c2410c" stroke-width="0.7"/>
+                <text x="228" y="55" text-anchor="middle" fill="#fed7aa" font-size="5.5" font-family="sans-serif">ServiceNow · Dataverse+</text>
+                <rect x="172" y="62" width="60" height="20" rx="3" fill="#7c2d12" stroke="#ea580c" stroke-width="0.8"/>
+                <text x="202" y="74" text-anchor="middle" fill="#ffedd5" font-size="6" font-family="sans-serif" font-weight="600">~15€/user/mois</text>
+                <text x="240" y="72" fill="#fdba74" font-size="5.5" font-family="sans-serif">⚠ licence</text>
+                <text x="240" y="80" fill="#fdba74" font-size="5.5" font-family="sans-serif">⚠ DSI alert</text>
+              </svg>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-cat power-automate">Power Automate</span><span class="blog-date">12 mars 2025</span></div>
+              <h4 class="blog-card-title">Connecteurs Premium vs Standard dans Power Automate : ce que votre DSI doit savoir</h4>
+              <p class="blog-card-desc">La distinction entre connecteurs Standard et Premium détermine vos coûts de licence. Voici comment optimiser votre architecture.</p>
+              <div class="blog-card-footer"><span class="blog-read">7 min</span><span>Lire →</span></div>
+            </div>
+          </div>
+
+          <div class="blog-card" data-cat="sharepoint" onclick="openArticle(9)">
+            <div class="blog-card-visual" style="padding:0;overflow:hidden;background:none">
+              <svg viewBox="0 0 300 100" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="100" fill="#0a0e1a"/>
+                <defs><marker id="arrmig" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#22c55e" stroke-width="1.5"/></marker></defs>
+                <rect x="12" y="20" width="90" height="60" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+                <rect x="12" y="20" width="90" height="16" rx="6" fill="#334155"/>
+                <text x="57" y="31" text-anchor="middle" fill="#94a3b8" font-size="6" font-family="sans-serif" font-weight="700">SP 2013</text>
+                <text x="57" y="43" text-anchor="middle" fill="#64748b" font-size="5" font-family="sans-serif">On-premise</text>
+                <rect x="20" y="48" width="32" height="24" rx="3" fill="#0f172a" stroke="#334155" stroke-width="0.7"/>
+                <rect x="22" y="50" width="28" height="3" rx="1" fill="#475569" opacity="0.6"/><rect x="22" y="55" width="24" height="3" rx="1" fill="#475569" opacity="0.4"/><rect x="22" y="60" width="26" height="3" rx="1" fill="#475569" opacity="0.4"/><rect x="22" y="65" width="20" height="3" rx="1" fill="#475569" opacity="0.3"/>
+                <text x="72" y="60" text-anchor="middle" fill="#64748b" font-size="5" font-family="sans-serif">15 ans</text>
+                <text x="72" y="68" text-anchor="middle" fill="#64748b" font-size="5" font-family="sans-serif">de données</text>
+                <path d="M103 50 Q150 30 197 50" fill="none" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arrmig)"/>
+                <text x="150" y="28" text-anchor="middle" fill="#22c55e" font-size="6" font-family="sans-serif" font-weight="700">Migration</text>
+                <text x="150" y="37" text-anchor="middle" fill="#16a34a" font-size="5" font-family="sans-serif">zéro interruption</text>
+                <rect x="198" y="20" width="90" height="60" rx="6" fill="#0c2340" stroke="#3b82f6" stroke-width="1"/>
+                <rect x="198" y="20" width="90" height="16" rx="6" fill="#1d4ed8" opacity="0.6"/>
+                <text x="243" y="31" text-anchor="middle" fill="#bfdbfe" font-size="5.5" font-family="sans-serif" font-weight="700">SharePoint Online</text>
+                <text x="243" y="43" text-anchor="middle" fill="#60a5fa" font-size="5" font-family="sans-serif">Microsoft 365</text>
+                <rect x="206" y="48" width="32" height="24" rx="3" fill="#1e3a5f" stroke="#3b82f6" stroke-width="0.7"/>
+                <rect x="208" y="50" width="28" height="3" rx="1" fill="#3b82f6" opacity="0.7"/><rect x="208" y="55" width="20" height="3" rx="1" fill="#3b82f6" opacity="0.5"/><rect x="208" y="60" width="24" height="3" rx="1" fill="#3b82f6" opacity="0.5"/><rect x="208" y="65" width="18" height="3" rx="1" fill="#3b82f6" opacity="0.4"/>
+                <text x="256" y="57" text-anchor="middle" fill="#60a5fa" font-size="5" font-family="sans-serif">Hub sites</text>
+                <text x="256" y="65" text-anchor="middle" fill="#60a5fa" font-size="5" font-family="sans-serif">Modern UX</text>
+                <text x="256" y="73" text-anchor="middle" fill="#22c55e" font-size="5" font-family="sans-serif">−67% volume</text>
+              </svg>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-cat sharepoint">SharePoint</span><span class="blog-date">1er mars 2025</span></div>
+              <h4 class="blog-card-title">Migrer un intranet SharePoint 2013 vers SharePoint Online en 2025 : retour d'expérience</h4>
+              <p class="blog-card-desc">Comment j'ai planifié et exécuté une migration de 15 ans de contenu vers SharePoint Online sans couper le service.</p>
+              <div class="blog-card-footer"><span class="blog-read">9 min</span><span>Lire →</span></div>
+            </div>
+          </div>
+
+          <div class="blog-card" data-cat="ia" onclick="openArticle(10)">
+            <div class="blog-card-visual" style="padding:0;overflow:hidden;background:none">
+              <svg viewBox="0 0 300 100" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="100" fill="#0d0d1a"/>
+                <defs><marker id="arrai" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#ea580c" stroke-width="1.5"/></marker></defs>
+                <rect x="12" y="15" width="60" height="72" rx="4" fill="#1c1917" stroke="#78350f" stroke-width="1"/>
+                <rect x="12" y="15" width="60" height="14" rx="4" fill="#7c2d12"/>
+                <text x="42" y="25" text-anchor="middle" fill="#fdba74" font-size="6" font-family="sans-serif" font-weight="700">FACTURE.PDF</text>
+                <rect x="18" y="34" width="48" height="4" rx="1" fill="#78350f" opacity="0.7"/><rect x="18" y="41" width="40" height="4" rx="1" fill="#78350f" opacity="0.5"/><rect x="18" y="48" width="44" height="4" rx="1" fill="#78350f" opacity="0.5"/><rect x="18" y="55" width="36" height="4" rx="1" fill="#78350f" opacity="0.4"/>
+                <rect x="18" y="63" width="48" height="6" rx="2" fill="#ea580c" opacity="0.3" stroke="#ea580c" stroke-width="0.6"/>
+                <text x="42" y="68" text-anchor="middle" fill="#fed7aa" font-size="4.5" font-family="sans-serif">Total TTC : 1 240,00 €</text>
+                <rect x="18" y="72" width="48" height="6" rx="2" fill="#ea580c" opacity="0.3" stroke="#ea580c" stroke-width="0.6"/>
+                <text x="42" y="77" text-anchor="middle" fill="#fed7aa" font-size="4.5" font-family="sans-serif">N° : FA-2025-0042</text>
+                <line x1="73" y1="50" x2="100" y2="50" stroke="#ea580c" stroke-width="1.5" marker-end="url(#arrai)"/>
+                <rect x="100" y="30" width="60" height="42" rx="8" fill="#1a0a2e" stroke="#9333ea" stroke-width="1.2"/>
+                <rect x="100" y="30" width="60" height="14" rx="8" fill="#581c87" opacity="0.8"/>
+                <text x="130" y="40" text-anchor="middle" fill="#e9d5ff" font-size="6" font-family="sans-serif" font-weight="700">AI Builder</text>
+                <circle cx="114" cy="54" r="2.5" fill="#9333ea" opacity="0.8"/><circle cx="124" cy="54" r="2.5" fill="#a855f7" opacity="0.8"/><circle cx="134" cy="54" r="2.5" fill="#9333ea" opacity="0.8"/><circle cx="144" cy="54" r="2.5" fill="#a855f7" opacity="0.8"/>
+                <circle cx="119" cy="63" r="2.5" fill="#7c3aed" opacity="0.7"/><circle cx="130" cy="63" r="2.5" fill="#9333ea" opacity="0.9"/><circle cx="141" cy="63" r="2.5" fill="#7c3aed" opacity="0.7"/>
+                <line x1="161" y1="50" x2="185" y2="50" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arrai)"/>
+                <rect x="185" y="15" width="103" height="72" rx="4" fill="#0c1f12" stroke="#22c55e" stroke-width="1"/>
+                <rect x="185" y="15" width="103" height="14" rx="4" fill="#14532d"/>
+                <text x="236" y="25" text-anchor="middle" fill="#86efac" font-size="6" font-family="sans-serif" font-weight="700">Données extraites</text>
+                <text x="191" y="37" fill="#64748b" font-size="5" font-family="sans-serif">Montant TTC</text><text x="255" y="37" fill="#4ade80" font-size="5" font-family="sans-serif">1 240,00 €</text><rect x="277" y="32" width="8" height="6" rx="2" fill="#15803d"/><text x="281" y="37" text-anchor="middle" fill="#bbf7d0" font-size="4" font-family="sans-serif">98%</text>
+                <text x="191" y="46" fill="#64748b" font-size="5" font-family="sans-serif">N° facture</text><text x="255" y="46" fill="#4ade80" font-size="5" font-family="sans-serif">FA-2025-0042</text><rect x="277" y="41" width="8" height="6" rx="2" fill="#15803d"/><text x="281" y="46" text-anchor="middle" fill="#bbf7d0" font-size="4" font-family="sans-serif">95%</text>
+                <text x="191" y="55" fill="#64748b" font-size="5" font-family="sans-serif">Date</text><text x="255" y="55" fill="#fbbf24" font-size="5" font-family="sans-serif">12/03/2025</text><rect x="277" y="50" width="8" height="6" rx="2" fill="#92400e"/><text x="281" y="55" text-anchor="middle" fill="#fde68a" font-size="4" font-family="sans-serif">72%</text>
+                <text x="191" y="64" fill="#64748b" font-size="5" font-family="sans-serif">Fournisseur</text><text x="255" y="64" fill="#4ade80" font-size="5" font-family="sans-serif">Dupont SA</text><rect x="277" y="59" width="8" height="6" rx="2" fill="#15803d"/><text x="281" y="64" text-anchor="middle" fill="#bbf7d0" font-size="4" font-family="sans-serif">99%</text>
+              </svg>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-cat ia">IA &amp; Copilot</span><span class="blog-date">19 fév. 2025</span></div>
+              <h4 class="blog-card-title">AI Builder dans Power Apps : extraction automatique de données sur documents — tutoriel complet</h4>
+              <p class="blog-card-desc">Comment connecter AI Builder à une Canvas App pour extraire automatiquement les données d'une facture PDF en 30 minutes.</p>
+              <div class="blog-card-footer"><span class="blog-read">11 min</span><span>Lire →</span></div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -1630,7 +1650,7 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
   <div id="article-view" style="display:none;background:var(--bg)">
     <div class="article-header">
       <div style="max-width:820px;margin:0 auto;padding:0 24px">
-        <button class="article-back" onclick="closeBlogArticle()">← Retour aux articles</button>
+        <button class="article-back" onclick="closeArticle()">← Retour aux articles</button>
         <div class="article-meta-top" id="articleMetaTop"></div>
         <h1 class="article-title" id="articleTitle"></h1>
         <p class="article-subtitle" id="articleSubtitle"></p>
@@ -1673,12 +1693,72 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
   <div class="testi-wrapper reveal">
     <div class="testi-track-outer">
       <div class="testi-track" id="testiTrack">
-        <div class="testi-card"><div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><p class="testi-text">« Florian a transformé notre processus qualité en quelques semaines. Ce qui prenait des heures de saisie manuelle se fait maintenant automatiquement. L'app Power Apps est intuitive et nos équipes l'ont adoptée immédiatement. »</p><div class="testi-author"><div class="testi-avatar">ML</div><div><div class="testi-name">Marc Leclercq</div><div class="testi-role">Directeur Qualité</div><div class="testi-company">Industrie Manufacturière</div></div></div></div>
-        <div class="testi-card"><div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><p class="testi-text">« Besoin urgent d'automatiser nos flux SharePoint. Florian a livré une solution Power Automate complète en 10 jours. Sérieux, réactif, résultat au-delà de nos attentes. Je le recommande sans hésitation. »</p><div class="testi-author"><div class="testi-avatar">SC</div><div><div class="testi-name">Sophie Charlier</div><div class="testi-role">Responsable IT</div><div class="testi-company">PME Logistique Nord</div></div></div></div>
-        <div class="testi-card"><div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><p class="testi-text">« Application de gestion de chantiers en Power Apps — exactement ce dont on avait besoin. Florian a compris nos contraintes terrain dès le premier échange. Utilisée par toute l'équipe chaque jour. »</p><div class="testi-author"><div class="testi-avatar">TB</div><div><div class="testi-name">Thomas Boulanger</div><div class="testi-role">Gérant</div><div class="testi-company">BTP Solutions HDF</div></div></div></div>
-        <div class="testi-card"><div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><p class="testi-text">« Dashboard Power BI livré en temps record avec exactement les KPIs dont on avait besoin. Florian est pédagogue, disponible et force de proposition. Collaboration au top, on refera appel à lui. »</p><div class="testi-author"><div class="testi-avatar">AM</div><div><div class="testi-name">Aurélie Martin</div><div class="testi-role">Directrice Administrative</div><div class="testi-company">Retail Group Belgique</div></div></div></div>
-        <div class="testi-card"><div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><p class="testi-text">« Refonte complète de notre intranet SharePoint et workflows Power Automate. Florian gère aussi bien la partie technique que la conduite du changement. Un vrai atout pour notre transformation digitale. »</p><div class="testi-author"><div class="testi-avatar">PD</div><div><div class="testi-name">Pierre Dumont</div><div class="testi-role">DSI</div><div class="testi-company">Groupe Industriel Flandre</div></div></div></div>
-      </div>
+        <div class="testi-card">
+  <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+  <p class="testi-text">
+  « Florian a parfaitement compris notre besoin dès le départ. Le travail a été réalisé rapidement et correspond totalement à nos standards. 
+  Sa communication est fluide et il est très réactif pour les ajustements de fin de mission. »
+  </p>
+  <div class="testi-author">
+    <div class="testi-avatar">AM</div>
+    <div>
+      <div class="testi-name">Adrien Meley</div>
+      <div class="testi-role">Directeur Général</div>
+      <div class="testi-company">MCP Data Solutions</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="testi-card">
+  <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+  <p class="testi-text">
+  « Florian nous a accompagné dans la mise en place d'automatisations Power Automate ainsi qu'une application Power Apps adaptée à nos besoins métier. 
+  Le résultat est très efficace et nos équipes utilisent désormais la solution au quotidien. »
+  </p>
+  <div class="testi-author">
+    <div class="testi-avatar">DR</div>
+    <div>
+      <div class="testi-name">David Rupied</div>
+      <div class="testi-role">Directeur Général</div>
+      <div class="testi-company">DOD&Cie</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="testi-card">
+  <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+  <p class="testi-text">
+  « Florian a développé pour notre cabinet un automate permettant d'optimiser certaines tâches administratives et comptables. 
+  La solution nous permet de gagner un temps précieux au quotidien. Travail sérieux et très professionnel. »
+  </p>
+  <div class="testi-author">
+    <div class="testi-avatar">SB</div>
+    <div>
+      <div class="testi-name">Samantha Billoud</div>
+      <div class="testi-role">Experte-Comptable</div>
+      <div class="testi-company">OnlyCompta</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="testi-card">
+  <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+  <p class="testi-text">
+  « Très bonne collaboration avec Florian. Il comprend rapidement les besoins métiers et propose des solutions efficaces avec Power Platform. 
+  Le travail est sérieux, rapide et parfaitement structuré. »
+  </p>
+  <div class="testi-author">
+    <div class="testi-avatar">JP</div>
+    <div>
+      <div class="testi-name">Jean-Baptiste Poisson</div>
+      <div class="testi-role">Consultant</div>
+      <div class="testi-company">CMP IFORMAP</div>
+    </div>
+  </div>
+</div>
     </div>
     <div class="testi-controls">
       <button class="testi-btn" onclick="testiPrev()" aria-label="Témoignage précédent" type="button"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
@@ -1726,13 +1806,13 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
       <p class="contact-sub">Premier échange 100% gratuit et sans engagement. On analyse ensemble votre situation et je vous propose une solution adaptée à vos objectifs et votre budget.</p>
       
       <div class="contact-links">
-        <a href="mailto:f.beyen@orange.fr" class="contact-link">
+        <a href="mailto:florian.beyen@failornit.com" class="contact-link">
           <div class="contact-link-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </div>
           <div>
             <div class="contact-link-label">Email</div>
-            <div class="contact-link-val">f.beyen@orange.fr</div>
+            <div class="contact-link-val">florian.beyen@failornit.com</div>
           </div>
         </a>
 
@@ -1837,7 +1917,7 @@ footer{border-top:1px solid var(--border);padding:32px 60px;background:var(--bg2
 </div>
 <div class="notif" id="notif"></div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ═══════════════════════════════════════════════════════════
 // FORMSPREE — fonctionne avec Zimbra, Gmail, tout email
 // 1. Créez un compte gratuit sur https://formspree.io
@@ -1970,7 +2050,25 @@ document.querySelectorAll('.hero-stats,#impact').forEach(el=>co.observe(el));
 function toggleFaq(item){ const open=item.classList.contains('open'); document.querySelectorAll('.faq-item').forEach(f=>f.classList.remove('open')); if(!open) item.classList.add('open'); }
 
 // SMOOTH ANCHORS
-document.querySelectorAll('a[href^="#"]').forEach(a=>{ a.addEventListener('click',e=>{ const t=document.querySelector(a.getAttribute('href')); if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});} }); });
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click', e=>{
+    const href = a.getAttribute('href');
+    if(href === '#blog'){ e.preventDefault(); showBlog(); return; }
+    const t = document.querySelector(href);
+    if(!t) return;
+    e.preventDefault();
+    const blogOpen = document.getElementById('blog').style.display === 'block';
+    if(blogOpen){
+      hideBlog();
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{
+        const target = document.querySelector(href);
+        if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+      }));
+    } else {
+      t.scrollIntoView({behavior:'smooth',block:'start'});
+    }
+  });
+});
 
 // NOTIFICATION
 function showNotif(msg,err=false){ const n=document.getElementById('notif'); n.textContent=msg; n.className='notif'+(err?' error':'')+' show'; setTimeout(()=>n.className='notif',5000); }
@@ -2170,68 +2268,6 @@ Action 2 : Si approuvé → Mettre à jour SharePoint + notifier
     `
   },
   {
-    id:3,
-    cat:"ia",
-    catLabel:"IA & Copilot",
-    catClass:"ia",
-    icon:"🤖",
-    title:"Copilot Studio en 2025 : ce qu'il peut vraiment faire (et ce qu'il ne peut pas)",
-    subtitle:"Retour terrain sur 3 projets de chatbot interne avec Copilot Studio. Les vraies capacités, les limites réelles et les bonnes pratiques pour ne pas se planter.",
-    date:"28 jan. 2025",
-    read:"10 min de lecture",
-    content:`
-      <h2>Le contexte : 3 projets en 6 mois</h2>
-      <p>Depuis mon arrivée chez BNP Paribas Fortis, j\'ai déployé 3 chatbots internes avec Copilot Studio. Un assistant RH, un agent support IT niveau 1, et un bot de recherche documentaire. Voici ce que j\'ai appris sur ce que cet outil peut — et ne peut pas — faire.</p>
-
-      <h2>Ce que Copilot Studio fait très bien</h2>
-      <p><strong>Répondre aux questions sur une base documentaire SharePoint.</strong> C\'est là que Copilot Studio est impressionnant. Connectez-le à une bibliothèque SharePoint bien organisée, et il répond avec précision aux questions en citant ses sources. Sur notre base de procédures RH (400 documents), le taux de bonne réponse dépasse 85%.</p>
-      <p><strong>L\'intégration Teams native.</strong> Déployer le bot dans Teams prend littéralement 2 clics. Les utilisateurs le retrouvent dans leur outil quotidien sans formation spécifique.</p>
-      <p><strong>Les flux Power Automate déclenchés depuis une conversation.</strong> L\'utilisateur dit "je veux poser un congé le 15 mars", le bot déclenche un flux Power Automate qui crée la demande dans SharePoint et notifie le manager. Cette combinaison est très puissante.</p>
-
-      <h2>Les limites qu\'on ne vous dit pas</h2>
-      <p><strong>La qualité dépend entièrement de la qualité documentaire.</strong> Si vos documents SharePoint sont mal structurés, non datés, ou contradictoires entre eux, le bot va "halluciner" ou donner des réponses obsolètes. Copilot Studio n\'est pas magique : garbage in, garbage out.</p>
-      <p><strong>Les conversations complexes multi-tours sont limitées.</strong> Pour des scénarios simples (Q&A, déclenchement d\'actions), c\'est parfait. Pour des conversations nécessitant un contexte long ou une logique complexe, vous atteindrez rapidement les limites des topics.</p>
-      <div class="tip-box"><strong>💡 Bonne pratique :</strong><p>Commencez par les 20 questions les plus fréquemment posées à votre équipe support ou RH. Un bot qui répond parfaitement à ces 20 questions génère déjà 70% de la valeur.</p></div>
-
-      <h2>Prérequis pour réussir</h2>
-      <ul>
-        <li>Licence Microsoft 365 avec Copilot Studio inclus (ou licences séparées à partir de 200$/mois)</li>
-        <li>Base documentaire propre et à jour dans SharePoint</li>
-        <li>Au moins 1 "champion" interne pour gérer les topics et améliorer continuellement</li>
-        <li>Des métriques de succès définies avant le lancement</li>
-      </ul>
-      <blockquote><p>"Copilot Studio est l\'outil le plus rapide pour déployer un assistant IA en entreprise. Mais la vitesse de déploiement ne compense pas une mauvaise préparation des données."</p></blockquote>
-    `
-  },
-  {
-    id:4,
-    cat:"retour",
-    catLabel:"Retour d'expérience",
-    catClass:"retour",
-    icon:"🏦",
-    title:"6 mois chez BNP Paribas Fortis : ce que j'ai appris sur la transformation digitale en banque",
-    subtitle:"Un retour honnête sur les réalités du déploiement Power Platform dans un grand groupe financier international. Les succès, les frictions, et les leçons.",
-    date:"14 jan. 2025",
-    read:"12 min de lecture",
-    content:`
-      <h2>Le contexte de ma mission</h2>
-      <p>En décembre 2024, j\'intègre BNP Paribas Fortis à Bruxelles via Amaris Consulting en VIE. Ma mission : accélérer l\'adoption de Power Platform dans plusieurs équipes de la banque. Ce que j\'ai trouvé sur place m\'a à la fois surpris et appris énormément.</p>
-
-      <h2>La réalité d\'un grand groupe : les freins que personne ne mentionne</h2>
-      <p><strong>La gouvernance IT est votre premier interlocuteur, pas le métier.</strong> Dans une grande banque, avant de déployer quoi que ce soit, il faut passer par des comités de sécurité, des revues d\'architecture, des validations de conformité DORA et RGPD. Comptez 4 à 8 semaines pour qu\'un nouveau connecteur Power Automate soit approuvé.</p>
-      <p><strong>Les environnements sont cloisonnés.</strong> Développement, test, production — trois environnements Dataverse distincts avec des procédures de déploiement strictes. La promotion d\'une solution d\'un environnement à l\'autre nécessite des solutions Power Platform correctement empaquetées. Ça oblige à une rigueur bénéfique.</p>
-
-      <h2>Ce qui fonctionne remarquablement bien</h2>
-      <p>Malgré ces contraintes, les déploiements Power Platform en banque génèrent un ROI spectaculaire précisément parce que les processus manuels sont nombreux et coûteux. Une automatisation qui économise 30 minutes par jour à 50 employés représente 250h/mois — soit plus de 30 000€ annuels en coût de main d\'œuvre.</p>
-      <p>L\'approbation des workflows de validation (congés, notes de frais, exceptions réglementaires) a été notre plus grand succès. Avant : 6 échanges emails en moyenne. Après : 0 email, 1 notification Teams, validation en 2 clics.</p>
-
-      <h2>Les leçons que j\'emporte</h2>
-      <p><strong>Cherchez les "quick wins" visibles dès la semaine 1.</strong> Dans un environnement corporate, votre légitimité se construit sur des résultats rapides et visibles. Identifiez la douleur la plus forte de votre équipe et automatisez-la en priorité, même si c\'est simple.</p>
-      <p><strong>Documentez tout, dès le début.</strong> Les solutions Power Platform sans documentation deviennent orphelines dès que leur créateur quitte l\'équipe. J\'ai repris des apps sans aucune documentation — c\'est une expérience que je ne souhaite à personne.</p>
-      <div class="tip-box"><strong>💡 Conseil pour les freelances :</strong><p>Si vous intervenez dans un grand groupe, proposez systématiquement un "kit de transfert" : documentation technique, guide utilisateur, et 2h de formation. C\'est ce qui distingue un bon consultant d\'un excellent consultant.</p></div>
-    `
-  },
-  {
     id:5,
     cat:"power-apps",
     catLabel:"Power Apps",
@@ -2404,7 +2440,137 @@ If(varModified, Refresh(MaListe); Set(varModified, false))</code></pre>
       <p>La question n\'est pas "Power Platform ou IA ?". C\'est "comment orchestrer intelligemment ces deux approches pour maximiser la valeur livrée ?"</p>
       <p>Et ça, c\'est exactement ce que je fais.</p>
     `
-  }
+  }, 
+  {
+  id: 8,
+  cat: "power-automate",
+  catLabel: "Power Automate",
+  catClass: "power-automate",
+  icon: "🔗",
+  title: "Connecteurs Premium vs Standard dans Power Automate : ce que votre DSI doit savoir",
+  subtitle: "La distinction entre connecteurs Standard et Premium détermine vos coûts de licence. Voici comment optimiser votre architecture pour éviter les mauvaises surprises.",
+  date: "12 mars 2025",
+  read: "7 min de lecture",
+  content: `
+    <h2>La question des licences, terrain miné</h2>
+    <p>Rien ne génère plus de friction en cours de projet qu'une discussion de licence en fin de sprint. "Ah, ce connecteur est Premium ?" — j'entends cette phrase dans presque chaque mission. Voici comment anticiper.</p>
+
+    <h2>La règle de base</h2>
+    <p><strong>Connecteurs Standard</strong> : inclus dans les licences Microsoft 365. SharePoint, Teams, Outlook, OneDrive, Excel, Forms — tout ce qui est dans votre tenant M365 de base. Aucun surcoût.</p>
+    <p><strong>Connecteurs Premium</strong> : nécessitent une licence Power Automate Premium (~15€/user/mois) ou per-flow (~100€/flow/mois). Exemples : SQL Server externe, Dataverse avancé, SAP, Salesforce, ServiceNow, HTTP avec authentification.</p>
+
+    <div class="tip-box"><strong>💡 Le cas Dataverse :</strong><p>Dataverse avec les connecteurs "standard" de Power Apps/Automate est inclus dans M365. Mais Dataverse avec des fonctionnalités avancées (business rules, plugins, entités personnalisées complexes) nécessite une licence Premium. La frontière est floue — vérifiez toujours avant de construire.</p></div>
+
+    <h2>Les 5 scénarios qui piègent tout le monde</h2>
+    <h3>1. Le connecteur HTTP</h3>
+    <p>Appeler une API tierce via HTTP — c'est Premium. Si votre flux doit consommer une API REST externe (météo, ERP, CRM tiers), prévoyez la licence Premium. Alternative : créer un Azure Function gratuit comme proxy, puis appeler SharePoint depuis Power Automate en Standard.</p>
+
+    <h3>2. SQL Server en dehors d'Azure</h3>
+    <p>SQL Server hébergé on-premise ou chez un hébergeur tiers = connecteur Premium + passerelle de données locale. Budget supplémentaire à prévoir, et la passerelle ajoute de la latence.</p>
+
+    <h3>3. Power Apps avec Dataverse</h3>
+    <p>Une Canvas App avec une source SharePoint → Standard. La même app avec Dataverse comme source → Premium obligatoire pour les utilisateurs finaux. Multipliez par le nombre d'utilisateurs — la note peut être salée pour une grande équipe.</p>
+
+    <h3>4. Flux déclenchés depuis une Power App Premium</h3>
+    <p>Si votre Power App nécessite une licence Premium, les flux Power Automate appelés depuis cette app sont couverts par la même licence. Pas besoin de licences séparées.</p>
+
+    <h3>5. Les environnements de développement</h3>
+    <p>Les licences de développeur Microsoft (gratuites) permettent l'accès aux connecteurs Premium pour tester. Mais en production, tout utilisateur final qui déclenche un flux avec un connecteur Premium a besoin de sa propre licence.</p>
+
+    <h2>Ma stratégie d'architecture pour minimiser les coûts</h2>
+    <p>Avant de commencer tout projet, je cartographie les sources de données et classe chaque connecteur. L'objectif : maximiser l'usage des connecteurs Standard pour les utilisateurs "légers", et cantonner les connecteurs Premium aux power users et processus critiques. Un flux per-flow à 100€/mois est souvent plus économique que 50 licences per-user à 15€/mois pour un processus automatisé sans interaction humaine.</p>
+
+    <blockquote><p>"La meilleure architecture Power Automate est celle qui délivre la valeur maximale avec les licences minimales."</p></blockquote>
+  `
+},
+{
+  id: 9,
+  cat: "sharepoint",
+  catLabel: "SharePoint",
+  catClass: "sharepoint",
+  icon: "🏗️",
+  title: "Migrer un intranet SharePoint 2013 vers SharePoint Online en 2025 : retour d'expérience",
+  subtitle: "SharePoint 2013 est en fin de support. Voici comment j'ai planifié et exécuté une migration de 15 ans de contenu vers SharePoint Online sans couper le service.",
+  date: "1er mars 2025",
+  read: "9 min de lecture",
+  content: `
+    <h2>Le contexte : 15 ans de contenu, 0 jour d'arrêt autorisé</h2>
+    <p>Client industriel, région Nord, 340 collaborateurs. Leur SharePoint 2013 datait de... 2013. Des milliers de documents, des workflows InfoPath, des listes imbriquées et une architecture compréhensible seulement par le consultant qui l'avait créée. Et la DSI imposait zéro jour d'interruption de service.</p>
+    <p>Voici ce que j'ai appris de cette migration de 4 mois.</p>
+
+    <h2>Phase 1 — L'audit, l'étape que personne ne veut faire mais qui sauve tout</h2>
+    <p>Avant de migrer quoi que ce soit, j'ai passé 3 semaines à auditer l'existant avec ShareGate (outil indispensable). Résultat : 67% du contenu n'avait pas été consulté depuis plus de 2 ans. Nous n'avons migré que 33% du contenu total — les 67% restants ont été archivés dans Azure Blob Storage à coût quasi nul.</p>
+    <div class="tip-box"><strong>💡 Règle d'or :</strong><p>Ne migrez jamais "tout". Un audit préalable réduit le scope de 50% en moyenne et divise les risques et les coûts par deux.</p></div>
+
+    <h2>Phase 2 — L'architecture cible avant de toucher quoi que ce soit</h2>
+    <p>L'erreur classique des migrations : reproduire à l'identique l'architecture source dans la cible. C'est reproduire les mêmes problèmes. Nous avons profité de la migration pour revoir complètement l'architecture information : hub site, sites d'équipe Teams-connected, bibliothèques de métadonnées gérées, abandonnant les dossiers pour les colonnes.</p>
+
+    <h2>Phase 3 — La migration incrémentale</h2>
+    <p>Jamais de big bang. Nous avons migré département par département, en maintenant une synchronisation bidirectionnelle pendant 2 semaines après chaque vague. Les équipes avaient le temps de vérifier leurs données avant que l'ancien serveur soit désactivé pour leur scope.</p>
+    <p>Les workflows InfoPath ont été recréés en Power Automate — c'était l'occasion de les simplifier drastiquement. Sur 18 workflows migrés, 12 ont été fusionnés ou simplifiés, et seulement 6 ont été reconstruits à l'identique.</p>
+
+    <h2>Les pièges spécifiques à SharePoint Online</h2>
+    <p><strong>Les permissions.</strong> SharePoint 2013 avait souvent des permissions très granulaires au niveau item. SharePoint Online supporte ça mais ce n'est pas recommandé à grande échelle — ça dégrade les performances et complique la gouvernance. Nous avons simplifié en passant à des permissions au niveau liste/bibliothèque.</p>
+    <p><strong>Les colonnes calculées complexes.</strong> Certaines colonnes calculées SP2013 utilisaient des formules non supportées dans SPO. Audit préalable indispensable pour identifier ces cas edge.</p>
+    <p><strong>Le threshold des 5000 éléments.</strong> Plus strict dans SPO. Plusieurs listes avaient 20 000+ éléments sans index. Ajout d'index sur les colonnes de tri/filtre avant migration obligatoire.</p>
+
+    <h2>Le résultat</h2>
+    <p>Migration terminée en 4 mois, zéro interruption de service, 67% de réduction du volume de données stockées, et un intranet que les équipes IT peuvent maintenant maintenir sans documentation de 200 pages.</p>
+  `
+},
+{
+  id: 10,
+  cat: "ia",
+  catLabel: "IA & Copilot",
+  catClass: "ia",
+  icon: "🧩",
+  title: "AI Builder dans Power Apps : extraction automatique de données sur documents — tutoriel complet",
+  subtitle: "Comment connecter AI Builder à une Canvas App pour extraire automatiquement les données d'une facture ou d'un bon de commande PDF en 30 minutes.",
+  date: "19 fév. 2025",
+  read: "11 min de lecture",
+  content: `
+    <h2>Le cas d'usage le plus demandé</h2>
+    <p>Traitement de factures fournisseurs, bons de livraison, formulaires papier scannés — c'est de loin le cas d'usage AI Builder le plus déployé en entreprise. Et pour cause : le ROI est immédiat. Une facture traitée manuellement prend 3 à 8 minutes. Avec AI Builder, c'est 10 secondes.</p>
+
+    <h2>Prérequis et licences</h2>
+    <p>AI Builder nécessite une licence Power Apps Premium ou Power Automate Premium. Chaque "credit" AI Builder consomme une unité de votre allocation mensuelle. Un traitement de document consomme environ 1 credit par page. Les licences Power Apps Premium incluent 500 AI credits/mois/utilisateur — suffisant pour la plupart des usages.</p>
+
+    <h2>Étape 1 — Entraîner le modèle de traitement de documents</h2>
+    <p>Dans Power Apps, allez dans AI Builder → Créer un modèle → Traitement de documents. Choisissez "Extraction de données structurées".</p>
+    <p>Téléchargez au minimum 5 exemples de vos documents (factures, BL, etc.). AI Builder utilise le transfer learning — 5 exemples suffisent pour un bon modèle si vos documents ont une structure cohérente.</p>
+    <div class="tip-box"><strong>💡 Astuce :</strong><p>Plus vos documents d'entraînement sont variés (polices, mises en page, langues), plus le modèle sera robuste en production. Visez 10-15 exemples si vous traitez des fournisseurs différents.</p></div>
+    <p>Étiquetez les champs à extraire : numéro de facture, date, montant HT, TVA, total TTC, IBAN fournisseur. AI Builder identifie automatiquement les champs texte, date et montant.</p>
+
+    <h2>Étape 2 — Intégrer le modèle dans Power Automate</h2>
+    <p>Créez un flux déclenché par l'arrivée d'un email avec pièce jointe (ou dépôt dans SharePoint).</p>
+    <pre><code>Déclencheur : Quand un email arrive dans factures@votre-entreprise.fr
+Action 1 : Récupérer les pièces jointes
+Action 2 : AI Builder → Traiter et extraire des informations
+           Modèle : Votre modèle factures
+           Fichier : Pièce jointe (base64)
+Action 3 : Créer un élément SharePoint avec les données extraites
+Action 4 : Envoyer notification Teams pour validation</code></pre>
+
+    <h2>Étape 3 — Interface de validation dans Power Apps</h2>
+    <p>AI Builder retourne un score de confiance par champ (0-1). Les champs avec confiance > 0.85 sont pré-remplis automatiquement. Les champs avec confiance < 0.85 sont mis en évidence pour review manuelle.</p>
+    <pre><code>// Dans Power Apps, coloriser les champs selon la confiance
+If(
+  AI_ConfidenceScore.Montant >= 0.85,
+  Color.Green,
+  If(
+    AI_ConfidenceScore.Montant >= 0.6,
+    Color.Orange,
+    Color.Red
+  )
+)</code></pre>
+    <p>Le comptable ne touche plus que les lignes en orange ou rouge. En pratique, avec un bon modèle, 85% des champs sont verts. Le temps de traitement passe de 5 minutes à 30 secondes de review.</p>
+
+    <h2>Métriques après 3 mois en production</h2>
+    <p>Pour un client avec 200 factures/mois : temps de traitement −94%, erreurs de saisie −100% (les erreurs humaines de re-saisie ont disparu), et un ROI atteint en 6 semaines sur le coût de développement + licences.</p>
+
+    <blockquote><p>"AI Builder n'est pas de la magie — c'est de l'ingénierie appliquée. Mais appliquée intelligemment, elle transforme des journées de saisie en minutes de review."</p></blockquote>
+  `
+}
 ];
 
 
@@ -2424,42 +2590,15 @@ function showBlog(){
 
 function hideBlog(){
   document.getElementById('blog').style.display = 'none';
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const href = a.getAttribute('href');
-    const target = document.querySelector(href);
-    if (!target) return;
-
-    e.preventDefault();
-
-    // Si on est dans le blog et qu'on clique ailleurs que sur #blog
-    if (document.getElementById('blog').style.display === 'block' && href !== '#blog') {
-      hideBlog();
-
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          const realTarget = document.querySelector(href);
-          if (realTarget) {
-            realTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        });
-      });
-      return;
-    }
-
-    if (href === '#blog') {
-      showBlog();
-      return;
-    }
-
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document.querySelectorAll('#hero,.marquee-section,#founder-intro,#stack,#services,#cases,#impact,#why,#why-platform,#web-alt,#testimonials,#process,#faq,#contact,footer').forEach(el=>{
+    if(el) el.style.display = '';
   });
-});
   window.scrollTo({top:0, behavior:'smooth'});
 }
 
+
 function openArticle(id){
-  const a = ARTICLES[id];
+  const a = ARTICLES.find(x => x.id === id);
   if(!a) return;
   document.getElementById('blog-list').style.display = 'none';
   const av = document.getElementById('article-view');
@@ -2486,9 +2625,10 @@ function openArticle(id){
   window.scrollTo({top:0, behavior:'smooth'});
 }
 
-function closeBlogArticle(){
+function closeArticle(){
   document.getElementById('article-view').style.display = 'none';
   document.getElementById('blog-list').style.display = 'block';
+  document.getElementById('blog').style.display = 'block';
   window.scrollTo({top:0, behavior:'smooth'});
 }
 
@@ -2507,11 +2647,6 @@ function filterBlog(btn, cat){
     });
   }
 }
-
-// Make blog nav link work from main page
-document.querySelectorAll('a[href="#blog"]').forEach(a => {
-  a.addEventListener('click', e => { e.preventDefault(); showBlog(); });
-});
 
 </script>
 </body>
