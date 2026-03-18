@@ -1929,6 +1929,18 @@ if(FORMSPREE_ID !== 'xvzwwazl'){
   document.getElementById('setupNotice').style.display = 'none';
 }
 
+// Au tout début de ton script, après les const/variables
+(function handleInitialHash() {
+  const hash = window.location.hash;
+  if (hash.startsWith('#article-')) {
+    const id = parseInt(hash.replace('#article-', ''));
+    showBlog();
+    openArticle(id);
+  } else if (hash === '#blog') {
+    showBlog();
+  }
+})();
+
 // CURSOR
 const cur = document.getElementById('cursor'), ring = document.getElementById('cursor-ring');
 document.addEventListener('mousemove', e => {
@@ -2572,11 +2584,26 @@ If(
 }
 ];
 
-
+window.addEventListener('popstate', function(e) {
+  const hash = window.location.hash;
+  
+  if (hash.startsWith('#article-')) {
+    const id = parseInt(hash.replace('#article-', ''));
+    openArticle(id);
+    showBlog();
+  } else if (hash === '#blog') {
+    showBlog();
+    closeArticle();
+  } else {
+    hideBlog();
+  }
+});
 
 // ── BLOG NAVIGATION ──────────────────────────────────────────────
 function showBlog(){
   // Show blog, hide main page sections
+  history.pushState({page: 'blog'}, '', '#blog');  // ← AJOUTER
+  document.title = 'Blog — Failorn IT';             // ← AJOUTER
   document.getElementById('blog').style.display = 'block';
   document.querySelectorAll('#hero,.marquee-section,#founder-intro,#stack,#services,#cases,#impact,#why,#why-platform,#web-alt,#testimonials,#process,#faq,#contact,footer').forEach(el => {
     if(el) el.style.display = 'none';
@@ -2599,6 +2626,11 @@ function hideBlog(){
 function openArticle(id){
   const a = ARTICLES.find(x => x.id === id);
   if(!a) return;
+
+  // ← AJOUTER CES 2 LIGNES
+  history.pushState({page: 'article', id: id}, '', '#article-' + id);
+  document.title = a.title + ' — Failorn IT';
+
   document.getElementById('blog-list').style.display = 'none';
   const av = document.getElementById('article-view');
   av.style.display = 'block';
@@ -2625,6 +2657,8 @@ function openArticle(id){
 }
 
 function closeArticle(){
+  history.pushState({page: 'blog'}, '', '#blog');  // ← AJOUTER
+  document.title = 'Blog — Failorn IT';             // ← AJOUTER
   document.getElementById('article-view').style.display = 'none';
   document.getElementById('blog-list').style.display = 'block';
   document.getElementById('blog').style.display = 'block';
